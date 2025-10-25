@@ -22,6 +22,6 @@ Chaque participant peut :
 - 💾 **Réseau décentralisé** : stockage distribué entre pairs (aucun point de défaillance unique).  
 - ⚡ **Performance** : transferts multi-source via protocole P2P (libp2p + QUIC).  
 - 💰 **Modèle équitable** : rémunération des hébergeurs selon leur contribution.  
-- 🖥️ **Expérience fluide** : application simple d’utilisation (interface graphique via Tauri + React).  
+- 🖥️ **Expérience fluide** : application simple d’utilisation en Rust (interface graphique via Tauri + React).  
 
 ---
