@@ -25,3 +25,6 @@ Chaque participant peut :
 - 🖥️ **Expérience fluide** : application simple d’utilisation en Rust (interface graphique via Tauri + React).  
 
 ---
+
+## Etat actuel
+Création d'un MVP en python
