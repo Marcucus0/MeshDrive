@@ -14,17 +14,29 @@ Chaque participant peut :
 - **Partager** ses ressources (espace disque, bande passante),
 - **Contribuer** à la résilience du réseau tout en étant **rémunéré** pour sa participation.
 
----
+## 🧩 **Structure du projet**
 
-## ⚙️ Objectifs du projet
+- **Frontend**  
+  - **Technologies** : HTML / CSS / JavaScript  
+  - **Dossier** : `web/`  
+  - Contient l’interface utilisateur (pages web, scripts et styles).  
 
-- 🔐 **Confidentialité totale** : chiffrement côté client (personne d’autre ne peut lire vos données).  
-- 💾 **Réseau décentralisé** : stockage distribué entre pairs (aucun point de défaillance unique).  
-- ⚡ **Performance** : transferts multi-source via protocole P2P (libp2p + QUIC).  
-- 💰 **Modèle équitable** : rémunération des hébergeurs selon leur contribution.  
-- 🖥️ **Expérience fluide** : application simple d’utilisation en Rust (interface graphique via Tauri + React).  
+- **Backend**  
+  - **Framework** : [FastAPI](https://fastapi.tiangolo.com/)  
+  - Gère la logique métier, les requêtes et les API endpoints.  
 
----
+- **Chiffrement**  
+  - **Dossier principal** : `cryptolib/`  
+    - Contient les **scripts Python** dédiés aux opérations de chiffrement et déchiffrement.  
+  - **Dossier des clés** : `keys/`  
+    - Contient des **fichiers JSON** stockant les **métadonnées** et **informations sur les fichiers uploadés**, notamment ceux **divisés en plusieurs parties** (*chunks*).  
 
+- **Tests Peer-to-Peer (P2P)**  
+  - **Dossier** : `p2p/`  
+  - Contient les **scripts et outils de test** pour les échanges de fichiers entre pairs.  
+
+- **Fichiers chiffrés**  
+  - **Dossier** : `output/`  
+  - Contient les **chunks chiffrés** des fichiers uploadés.
 ## Etat actuel
 Création d'un MVP en python
